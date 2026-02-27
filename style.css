@@ -9,138 +9,222 @@ a {
   text-decoration: none;
 }
 .noidungbentrong {
-  max-width: calc(100% - 48px);
-  width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
+.noidungchinh .noidungbentrong {
+  display: flex;
+  align-items: center;
+}
+
 .noidungbentrong h3 {
   font-size: 30px;
   color: whitesmoke;
   font-family: "Betania Patmos", cursive;
 }
-.noidungchinh .noidungbentrong {
-  display: flex;
-}
+
+/* NAV */
 .nav {
   margin-left: auto;
-  padding: 20px 0 0 100px;
+  padding: 0;
 }
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap; /* cho phép co lại nếu màn hình nhỏ */
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .nav a {
-  font-size: 20px;
+  font-size: 18px;
   color: whitesmoke;
-  padding: 12px 12px 12px 12px;
+  padding: 10px;
   font-family: "Betania Patmos", cursive;
+  white-space: nowrap; /* chữ không xuống dòng */
 }
+
 .nav a:hover {
   text-shadow: 1px 0 0 currentColor;
 }
-.nav ul {
-  display: flex;
-}
+
+/*  */
+
 .main-content {
   display: flex;
-  padding: 20px 0 20px 0;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 40px;
 }
+
 .hinhanhbandau .textgioithieu {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
+
 .hinhanhbandau img {
   width: 300px;
-  padding: 0 0 0 300px;
+  padding: 0;
 }
+
 .textgioithieu h3 {
   font-size: 50px;
-  padding: 25px 0 0 190px;
+  padding: 0;
 }
+
 .textgioithieu p {
   font-size: 25px;
   width: 500px;
-  padding: 0 0 0 240px;
+  padding: 0;
 }
+
 .khampha {
   display: block;
-  margin: 100px 0 0 0;
+  margin: 80px auto 0 auto;
   font-size: 50px;
-  padding: 0 0 0 550px;
+  text-align: center;
 }
+
 .khampha a {
   color: black;
   background-color: #f75050;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 20px;
 }
+
 .main-gioithieu {
   display: flex;
+  justify-content: center;
+  gap: 40px;
 }
+
 .phangioithieuhcm .phanvitri {
   display: flex;
+  justify-content: center;
+  gap: 30px;
 }
+
 .phanvitri h1 {
-  padding: 20px 0 0 420px;
+  padding: 0;
+  text-align: center;
 }
+
 .phanvitrinhung {
-  padding: 0 0 0 450px;
+  padding: 0;
 }
+
 .phangioithieuhcm p {
   font-size: 20px;
-  padding: 20px 0 0 0;
+  padding: 20px 0;
+  max-width: 900px;
+  margin: auto;
 }
+
 .phanconnguoi {
-  padding: 0 0 20px 0;
+  padding-bottom: 20px;
+  text-align: center;
 }
+
 .phanconnguoi img {
   width: 400px;
-  padding: 0 0 0 70px;
+  padding: 0;
 }
+
 .phanconnguoi p {
   font-size: 20px;
+  max-width: 900px;
+  margin: auto;
 }
+
 .sukhacbiet {
   display: flex;
+  justify-content: center;
+  gap: 40px;
 }
+
 .hinhanhsukhacbiet img {
   width: 700px;
-  padding: 0 0 0 20px;
+  padding: 0;
 }
+
 .motasukhacbiet p {
   font-size: 20px;
   width: 700px;
-  padding: 0 0 0 70px;
+  padding: 0;
 }
+
+/*  */
+
+/* KHỐI TỔNG */
+.nhapnoidungnguoidung,
+.hinhanhnhao,
+.thongtincanhan,
+.nhapthongtin {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* FORM */
 .nhapnoidungnguoidung {
-  padding: 0 0 0 200px;
+  text-align: center;
 }
+
 .nhapnoidungnguoidung .boxemail {
-  width: 200px;
+  width: 100%;
+  max-width: 500px;
   height: 200px;
 }
-.hinhanhnhao h1 {
-  padding: 0 0 0 180px;
-}
+
+/* HÌNH ẢNH */
 .hinhanhnhao {
-  padding: 0 0 0 450px;
+  text-align: center;
 }
+
+.hinhanhnhao h1 {
+  padding: 0;
+}
+
+/* THÔNG TIN CÁ NHÂN */
 .thongtincanhan {
   display: flex;
-  padding: 50px 0 0 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
 }
+
 .thongtincanhan img {
-  width: 400px;
-  padding: 0 0 0 300px;
+  width: 350px;
+  max-width: 100%;
+  padding: 0;
 }
-.thongtincanhan h1 {
-  padding: 20px 0 0 100px;
-}
+
+.thongtincanhan h1,
 .thongtincanhan h3 {
-  padding: 0 0 0 110px;
+  padding: 0;
 }
+
+/* NHẬP THÔNG TIN */
 .nhapthongtin {
-  padding: 0 0 50px 500px;
+  text-align: center;
+  padding-bottom: 40px;
 }
+
 .nhapthongtin h1 {
-  padding: 30px 0 0 150px;
+  padding: 0;
 }
+
+/*  */
+
 .videotet {
   padding: 0 0 0 450px;
 }
