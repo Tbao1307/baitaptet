@@ -288,3 +288,66 @@ a {
   width: 90%;
   max-width: 600px;
 }
+/* ===== FIX MOBILE ===== */
+@media (max-width: 768px) {
+  /* NAV xuống dòng */
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  /* Ảnh + text phần đầu xếp dọc */
+  .hinhanhbandau .textgioithieu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hinhanhbandau img {
+    width: 80%;
+    padding: 0;
+  }
+
+  .textgioithieu h3 {
+    font-size: 32px;
+    padding: 0;
+  }
+
+  .textgioithieu p {
+    font-size: 18px;
+    width: auto;
+    padding: 0 20px;
+  }
+
+  /* Nút khám phá canh giữa */
+  .khampha {
+    padding: 0;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  /* Các layout flex chuyển thành dọc */
+  .main-gioithieu,
+  .sukhacbiet,
+  .main-content,
+  .thongtincanhan {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* TẤT CẢ ẢNH co lại */
+  img {
+    max-width: 90%;
+    height: auto;
+    padding: 0 !important;
+  }
+
+  /* Xoá padding lệch trái */
+  h1,
+  h2,
+  h3,
+  p {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+}
